@@ -8,4 +8,5 @@ def	greet(somoene)
 	"Hello, #{somoene}!"
 end
 
+#main de test
 puts greet("chris")

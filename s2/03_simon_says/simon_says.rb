@@ -1,13 +1,23 @@
-# write your code here
-
-def	echo(str)
-		return "#{str}"
+def echo(input)
+	 	raise "Please enter a String" unless input.class == String
+	return input
 end
 
-def	shout(str)
-		return "#{str.upcase}"
+def shout(input)
+  		raise "Please enter a String" unless input.class == String
+	return input.upcase
 end
 
-#main de test
-puts echo(" chris")
-puts shout(" topher")
+def repeat(input, n = 2)
+  		raise "Please enter a String" unless input.class == String
+	return ((input+" ") * n).strip
+end
+
+def start_of_word(word, n)
+	word[0..(n-1)]
+end
+
+def first_word(word)
+  word.split(" ").first
+end
+

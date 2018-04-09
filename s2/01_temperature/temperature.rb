@@ -8,4 +8,5 @@ def	ctof(float_var)
 		float_var = (float_var * 9.0 / 5.0) + 32.0
 end
 
+#main de test
 puts ftoc(4)

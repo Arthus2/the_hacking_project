@@ -1,23 +1,25 @@
-def echo(input)
-	 	raise "Please enter a String" unless input.class == String
-	return input
+def echo(str)
+	return str
 end
 
-def shout(input)
-  		raise "Please enter a String" unless input.class == String
-	return input.upcase
+def shout(str)
+	return str.upcase
 end
 
-def repeat(input, n = 2)
-  		raise "Please enter a String" unless input.class == String
-	return ((input+" ") * n).strip
+def repeat(str,n=2)
+  n.times.collect { str }.join(' ')
 end
 
-def start_of_word(word, n)
-	word[0..(n-1)]
+def start_of_word(str,limit)
+  str = str.split("")
+  res = ""
+  for i in 0..limit - 1
+  	res += str[i]
+  end
+  res
 end
 
-def first_word(word)
-  word.split(" ").first
+def first_word(str)
+  str = str.split(" ")
+  str[0]
 end
-
